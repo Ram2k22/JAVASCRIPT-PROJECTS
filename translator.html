@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <link rel="stylesheet" href="translator.css" type="text/css"/>
+    <script src="https://use.fontawesome.com/7845d40d78.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="text-input">
+                <textarea class="from-text" placeholder="Enter text here"></textarea>
+                <textarea class="to-text" placeholder="Translated text" readonly disabled></textarea>
+            </div>
+            <ul class="controls">
+                <li class="from-row">
+                    <div class="icons">
+                        <span title="copy text"><i id ="from" class="fa fa-clipboard" aria-hidden="true"></i></span>
+                        <span title="speak"><i id="from" class="fa fa-volume-up" aria-hidden="true"></i></span>
+                    </div>
+                    <select></select>
+                </li>
+                <li class="exchange">
+                    <span title="exchange"><i class="fa fa-exchange" aria-hidden="true"></i></span>
+                </li>
+                <li class="to-row">
+                    <div class="icons">
+                        <span title="copy text"><i id="to" class="fa fa-clipboard" aria-hidden="true"></i></span>
+                        <span title="speak"><i id="to" class="fa fa-volume-up" aria-hidden="true"></i></span>
+                    </div>
+                    <select></select>
+                </li>
+            </ul>
+        </div>
+        <button title="translate" class="translate-button">Translate</button>
+    </div>
+    <script type="text/javascript" src="countries.js"></script>
+    <script type="text/javascript" src="translator.js"></script>
+</body>
+</html>
